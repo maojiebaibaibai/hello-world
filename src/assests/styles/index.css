@@ -1,0 +1,5 @@
+@import './init.css'; /*样式初始化文件*/
+
+@import './home.scss';
+@import './top.scss';
+@import './middle1.scss';

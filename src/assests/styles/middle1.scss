@@ -1,0 +1,81 @@
+.middle1-com {
+    width: 100%;
+    margin-top: 50px;
+    .left {
+        width: 450px;
+        #chart1 {
+            height: 200px;
+        }
+        &>header{
+            font-size: 20px;
+        }
+        & > ul {
+            margin-top: 20px;
+            width: 100%;
+            border: 1px solid #DCDCDC;
+            padding: 0 10px;
+            li {
+                display: flex;
+                height: 30px;
+                font-size: 14px;
+                align-items: center;
+                .green {
+                    width: 20px;
+                    height: 20px;
+                    background-color: green;
+                    margin-right: 10px;
+                }
+                .blue {
+                    width: 20px;
+                    height: 20px;
+                    background-color: blue;
+                    margin-right: 10px;
+                }
+                .gray {
+                    width: 20px;
+                    height: 20px;
+                    background-color: gray;
+                    margin-right: 10px;
+                }
+                lable {
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+    .right {
+        width: 100%;
+        &>header{
+            font-size: 20px;
+            line-height: 60px;
+        }
+        ul{
+            width: 100%;
+            font-size: 14px;
+            border-top: 1px solid #DCDCDC;
+            border-bottom: 1px solid #DCDCDC;
+            li{
+                width: 96%;
+                margin: 0 auto;
+                display: flex;
+                line-height: 40px;
+                justify-content: space-between;
+                &:not(:last-child){
+                    border-bottom: 1px solid #DCDCDC;
+                }
+                p{
+                    width: 70%;
+                }
+                .rate, .des{
+                    width: 10%;
+                }
+                .rate{
+                    text-align: right;
+                }
+                .des{
+                    text-align: left;
+                }
+            }
+        }
+    }
+}

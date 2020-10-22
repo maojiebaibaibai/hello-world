@@ -1,0 +1,145 @@
+.top-com{
+    width: 100%;
+    &>header{
+        width: 100%;
+        border-bottom: 1px solid #DCDCDC;
+        display: flex;
+        padding: 10px 0;
+        justify-content: space-between;
+        h3{
+            font-size: 24px;
+            letter-spacing: 1.5px;
+        }
+        .date-wrap{
+            display: flex;
+            padding-right: 20px;
+            .date{
+                width: 125px;
+                &>header{
+                    font-size: 12px;
+                    letter-spacing: 1px;
+                    color:#8B8989;
+                    margin-bottom: 2px;
+                }
+                &>label{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    &>.content{
+        padding-top: 20px;
+        .top{
+            width: 100%;
+            display: flex;
+            height: 100%;
+            align-items: center;
+            .left{
+                width: 40%;
+                display: flex;
+                #chart{
+                    height: 200px;
+                }
+                &>ul{
+                    margin-top: 20px;
+                    li{
+                        display: flex;
+                        height: 30px;
+                        font-size: 14px;
+                        align-items: center;
+                        .green{
+                            width: 20px;
+                            height: 20px;
+                            background-color: green;
+                            margin-right: 10px;
+                        }
+                        .blue{
+                            width: 20px;
+                            height: 20px;
+                            background-color: blue;
+                            margin-right: 10px;
+                        }
+                        lable{
+                            line-height: 30px;
+                        }
+                    }
+                }
+            }
+            .right{
+                width: 60%;
+                ul{
+                    display: flex;
+                    flex-wrap: wrap;
+                    li{
+                        width: 30%;
+                        height: 80px;
+                        header{
+                            font-size: 14px;
+                            color: #8B8989;
+                            margin-bottom: 5px;
+                        }
+                        label{
+                            font-size: 16px;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+        .bottom{
+            width: 100%;
+            ul{
+                li{
+                    border-bottom: 1px solid #DCDCDC;
+                    line-height: 50px;
+                    display: flex;
+                    justify-content: space-between;
+                    header{
+                        color: #8B8989;
+                        font-size: 14px;
+                    }
+                    p{
+                        font-size: 16px;
+                    }
+                    label{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        .alert{
+            height: 100px;
+            margin-top: 30px;
+            border: 1px solid #DCDCDC;
+            display: flex;
+            align-items: center;
+            position: relative;
+            .left{
+                height: 100%;
+                width: 10px;
+                background-color: orange;
+            }
+            .fa-exclamation-triangle{
+                font-size: 35px;
+                margin-left: 20px;
+            }
+            &>.content{
+                margin-left: 20px;
+                h3{
+                    font-size: 18px;
+                    font-weight: bold;
+                    margin-bottom: 5px;
+                }
+                label{
+                    font-size: 14px;
+                }
+            }
+            .fa-close{
+                position: absolute;
+                right: 20px;
+                top: 20px;
+                font-size: 20px;
+            }
+        }
+    }   
+}
