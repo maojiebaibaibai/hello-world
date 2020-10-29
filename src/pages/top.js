@@ -88,12 +88,12 @@ export default function TopComponent() {
                 </div>
                 <div className="alert">
                     <div className="left"></div>
-                    <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                    <i className="fa fa-exclamation-triangle" aria-hidden="true"></i>
                     <div className="content">
                         <h3>Satellite range is exceeded.</h3>
                         <label>Satellite range is exceeded,But will continue to allow portfolio to be saved.</label>
                     </div>
-                    <i class="fa fa-close" aria-hidden="true"></i>
+                    <i className="fa fa-close" aria-hidden="true"></i>
                 </div>
             </div>
         </div>
@@ -126,11 +126,13 @@ class Chart extends PureComponent {
                 height: 200
             },
             series: {
-                radiusRange: ['70%', '100%']
+                radiusRange: ['70%', '100%'],
+                // allowSelect: true,
             },
-            tooltip: {
-                suffix: '%'
-            }
+            legend: {
+                visible: true,
+                showCheckbox: false
+            },
         };
         var theme = {
             series: {

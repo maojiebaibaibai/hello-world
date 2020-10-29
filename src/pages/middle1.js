@@ -1,12 +1,26 @@
 import React, { PureComponent } from 'react';
 import chart from 'tui-chart';
+import WorldMap from '../components/map/map';
 
 export default function Middle1() {
+    const data = [
+        {country: 'CN', value: 100},
+        {country: 'SA', value: 90},
+        {country: 'JP', value: 80},
+        {country: 'CA', value: 70},
+        {country: 'US', value: 60},
+        {country: 'RU', value: 50},
+        {country: 'KP', value: 50},
+        {country: 'KR', value: 30},
+        {country: 'AU', value: 70},
+        {country: 'GL', value: 10},
+    ]
     return (
         <div className="middle1-com">
             <div className="left">
                 <header>Asset allocation</header>
-                <Chart />
+                <WorldMap data={data}/>
+                {/* <Chart/> */}
             </div>
             <div className="right">
                 <header>Top holdings</header>
@@ -99,7 +113,11 @@ class Chart extends PureComponent {
             },
             tooltip: {
                 suffix: '%'
-            }
+            },
+            legend: {
+                visible: true,
+                showCheckbox: false
+            },
         };
         var theme = {
             series: {
